@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/* ---------------------------- 
+common 
+---------------------------- */
+html { 
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px; 
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+.pc-view {
+    display: block;
+}
+.sp-view {
+    display: none;
+}
+.section { 
+    padding: 80px 0;
+}
+.inner { 
+    box-sizing: content-box; 
+    margin: 0 auto; 
+    max-width: 1100px; 
+    padding: 0 4%;
+}
+.pc-view { 
+    display: block;
+}
+.sp-view { 
+    display: none;
+}
+/* ttl */
+.sec-title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.sec-title::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #18098E;
+    width: 60px;
+    margin: 10px auto 0;
+}
+/* btn */
+.btn-more { 
+    margin-top: 80px;
+    text-align: center;
+}
+.btn-more a {
+    display: inline-block;
+    max-width: 230px;
+    width: 100%;
+    background-color: #951E32;
+    color: #FFF; 
+    font-size: 2.4rem;
+    text-align: center; 
+    padding: 12px; 
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+/* hover */
+
+/* ---------------------------- 
+header 
+---------------------------- */
+.h-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.h-nav ul li
+    display
+
+/* ---------------------------- 
+footer
+---------------------------- */
+
+
+
+/* ---------------------------- 
+main 
+---------------------------- */
+/* home */
+h2 {
+    color: orange;
+    font-size: 40px;
+   text-decoration: underline;
+   text-align: center;
+}
+P {
+    font-weight: bold;
+    border: 1px solid;
+    margin-bottom: 100px;
+    padding: 30px;
+    line-height: 5;
+}
+
+table { 
+    border-top: 3px solid orange;
+    
+}
+
+.text-pink {
+    color: pink;
+}
+/* ---------------------------- 
+responsive 
+---------------------------- */
+@media (max-width: 768px) {
+    /* ---------------------------- 
+    common 
+    ---------------------------- */
+    body {
+        font-size: 1.4rem;
+    }
+    .pc-view {
+        display: none;
+    }
+    .sp-view {
+        display: block;
+    }
+    .section {
+        padding: 60px 0;
+    }
+    /* ttl */
+    .sec-title {
+        font-size: 2.4rem;
+        margin-bottom: 40px;
+    }
+    .sec-title::after {
+        width: 30px;
+    }
+    /* btn */
+    .btn-more { 
+        margin-top: 60px;
+    }
+    .btn-more a {
+        font-size: 1.8rem;
+        padding: 6px;
+    }
+    /* ---------------------------- 
+    header 
+    ---------------------------- */
+    .h-top {
+        padding: 10px 0;
+    }
+    .h-logo {
+        width: 90px;
+    }
+    .h-hero {
+        background: url(../../assets/images/home/img_hero_sp.jpg) no-repeat center top;
+        background-size: cover;
+    }
+    .h-hero-text {
+        font-size: 3.6rem;
+        line-height: 1.1;
+    }
+    .h-hero-text span {
+        font-size: 1.8rem;
+        line-height: 2;
+        padding-top: 15px;
+    }
+    /* ---------------------------- 
+    main 
+    ---------------------------- */
+    #sec-service .inner {
+        padding: 0 11.4%;
+    }
+    .col-box {
+        flex-wrap: wrap;
+    }
+    .col-box-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .col-box-item:last-child {
+        margin-bottom: 0;
+    }
+    #sec-service .col-box-item img {
+        width: 125px;
+    }
+    .col-box-item h3 {
+        font-size: 1.8rem;
+        margin: 0 0 10px;
+    }
+    .works-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #sec-team .col-box-item p {
+        margin: 0;
+    }
+    #sec-contact {
+        background: url(../../assets/images/common/bg_contact_sp.jpg) no-repeat center top;
+        background-size: cover;
+    }
+    #sec-contact h3 {
+        font-size: 3.6rem;
+    }
+    .sns-link {
+        margin: 40px 0;
+    }
+}
